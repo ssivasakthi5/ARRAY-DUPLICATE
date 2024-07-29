@@ -1,0 +1,28 @@
+package day3;
+
+import java.util.Scanner;
+
+public class duplicate {
+ public static void main(String args[]) {
+	 Scanner s=new Scanner(System.in);
+		System.out.println("Enter a array size: ");
+		int count=0;
+	 int a=s.nextInt();
+	 int arr[]=new int[a];
+	 System.out.println("Enter a array "+a+" values: ");
+	 for(int i=0;i<a;i++)
+	 {
+		 arr[i]=s.nextInt();
+	 }
+	 for(int b=arr[0];b<arr.length;b++) {
+		 int x=arr[b];
+		 for(int c=1;c<arr.length;c++) {
+			 int y=arr[c];
+			 if(x==y) {
+				count=x; 
+			 }
+System.out.println(count);
+		 }
+	 }
+ }
+}
